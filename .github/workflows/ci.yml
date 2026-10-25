@@ -12,3 +12,5 @@ jobs:
         uses: actions/checkout@v7
       - name: List the files
         run: ls
+      - name: Check the home page has a heading
+        run: grep "<h1>" index.html
